@@ -4,6 +4,7 @@ import controller.CreationController;
 import model.Exercise;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 
 public class ExcerciseFrame {
@@ -20,43 +21,31 @@ public class ExcerciseFrame {
         frame.setTitle("Excercises");
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setSize(1000, 700);
+        panel1.setLayout(new BorderLayout());
 
         addExcerciseButton = new JButton("Add Excercise");
         deleteExerciseButton = new JButton("Delete Excercise");
-        addExcerciseButton.setVisible(true);
-        deleteExerciseButton.setVisible(true);
 
         rightButtonsPanel.setLayout(new BoxLayout(rightButtonsPanel, BoxLayout.PAGE_AXIS));
         rightButtonsPanel.setBackground(Color.GRAY);
+        rightButtonsPanel.setSize(new Dimension(500, 350));
 
-        //configure the table
-        String[] columnNames = {"Name", "Description"};
-
-        String[][] data = CreationController.toArray(Exercise.exerciseList);
-
-//-------------------TABLE CREATION ---------------------------------------------
-        table1 = new JTable(data, columnNames);
-        table1.setPreferredScrollableViewportSize(new Dimension(500, 70));
-        table1.setBounds(100, 100, 300, 500);
-        table1.setFillsViewportHeight(true);
-
+        table1 = ComponentBuilder.createExerciseTable();
         excerciseScrollPane = new JScrollPane(table1);
-        excerciseScrollPane.
-        excerciseScrollPane.setVisible(true);
+
 
 //-------------------ADD EVERYTHING TO THE FRAME ---------------------------------------------
         rightButtonsPanel.add(addExcerciseButton);
         rightButtonsPanel.add(deleteExerciseButton);
-        panel1.add(rightButtonsPanel);
-        panel1.add(excerciseScrollPane);
+        panel1.add(backButton, BorderLayout.NORTH);
+        panel1.add(rightButtonsPanel, BorderLayout.EAST);
+        panel1.add(excerciseScrollPane, BorderLayout.CENTER);
         frame.add(panel1);
         frame.setVisible(true);
 
         //if the user clicks the back button, open the main frame
         backButton.addActionListener(e -> {
             MainFrame mainFrame = new MainFrame();
-            Point location = frame.getLocationOnScreen();
-            mainFrame.setLocation((int)location.getX(), (int)location.getY()); // this doesn't work
             mainFrame.frame.setVisible(true);
             frame.dispose();
         });
@@ -67,5 +56,15 @@ public class ExcerciseFrame {
             addExcerciseFrame.frame.setVisible(true);
             frame.dispose();
         });
+
+        //if the user clicks the delete excercise button, delete the selected excercise
+        deleteExerciseButton.addActionListener(e -> {
+            int selectedRow = table1.getSelectedRow();
+            if(selectedRow != -1){
+                Exercise.exerciseList.remove(selectedRow);
+                ((DefaultTableModel)table1.getModel()).removeRow(selectedRow);
+            }
+        });
     }
+    
 }

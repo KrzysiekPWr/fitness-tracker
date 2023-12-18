@@ -8,4 +8,9 @@ public class ErrorPrompt extends ExcerciseFrame {
         JOptionPane.showMessageDialog(null,
                 "An error has occurred: Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
     }
+
+    public void DateErrorPrompt(String message) {
+        JOptionPane.showMessageDialog(null,
+                message, "Error", JOptionPane.ERROR_MESSAGE);
+    }
 }

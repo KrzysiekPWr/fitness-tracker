@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="80d9cca0-5c24-4ab8-806b-7d90212882f3" name="Changes" comment="Only can add exercise at this point">
+      <change afterPath="$PROJECT_DIR$/src/view/AddWorkoutExerciseFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises.ser" beforeDir="false" afterPath="$PROJECT_DIR$/exercises.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CreationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Exercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/AddExcerciseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddExcerciseFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CreateWorkoutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CreateWorkoutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ExcerciseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ExcerciseFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/FrameViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ComponentBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2Z3FkFGYqL38A67Qoyvu6bQfufM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/krisk/OneDrive - Politechnika Wroclawska/Semestr III/Jezyki_programowania/Lab3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;jformdesigner&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="view" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FitnessTracker">
+    <configuration name="FitnessTracker" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FitnessTracker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/Main.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Java Scratch.Main (1)" />
+        <item itemvalue="Java Scratch.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80d9cca0-5c24-4ab8-806b-7d90212882f3" name="Changes" comment="" />
+      <created>1701642997576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701642997576</updated>
+      <workItem from="1701642998601" duration="1546000" />
+      <workItem from="1701719158344" duration="8536000" />
+      <workItem from="1701881178898" duration="927000" />
+      <workItem from="1701976377807" duration="1344000" />
+      <workItem from="1701977742291" duration="10121000" />
+      <workItem from="1702125590688" duration="9000" />
+      <workItem from="1702127690992" duration="4812000" />
+      <workItem from="1702132789217" duration="8348000" />
+      <workItem from="1702229759282" duration="888000" />
+      <workItem from="1702230705579" duration="6535000" />
+      <workItem from="1702304139445" duration="8217000" />
+      <workItem from="1702322137378" duration="1331000" />
+      <workItem from="1702406172877" duration="6873000" />
+    </task>
+    <task id="LOCAL-00001" summary="Only can add exercise at this point">
+      <option name="closed" value="true" />
+      <created>1702230286678</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702230286678</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Only can add exercise at this point">
+      <option name="closed" value="true" />
+      <created>1702230293932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702230293932</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Only can add exercise at this point" />
+    <option name="LAST_COMMIT_MESSAGE" value="Only can add exercise at this point" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

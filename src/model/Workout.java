@@ -1,21 +1,41 @@
 package model;
 
-public class Workout {
-    // #TODO creating the training
-    // #TODO editing the training
-    // #TODO deleting the training
-    private int sets;
-    private int repetitions;
-    private float weight;
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Workout(int sets, int repetitions) {
-        this.sets = sets;
-        this.repetitions = repetitions;
+public class Workout implements Serializable {
+    private String name;
+    private String description;
+    private String[][] exercises;
+    private static List<Workout> workoutList = new ArrayList<>();
+    private static ArrayList<ArrayList<Integer>> workoutExercises = new ArrayList<>();
+    private ArrayList<LocalDate> dateList = new ArrayList<>();
+
+    public Workout(String name, String description, String[][] exercises) {
+        this.name = name;
+        this.description = description;
+        this.exercises = exercises;
     }
 
-    public Workout(int sets, int repetitions, float weight) {
-        this.sets = sets;
-        this.repetitions = repetitions;
-        this.weight = weight;
+    public static void setWorkoutList(List<Workout> workouts) {
+        workoutList = workouts;
+    }
+    public static List<Workout> getWorkoutList() {
+        return workoutList;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public String[][] getExercises() {
+        return exercises;
+    }
+
+    public ArrayList<LocalDate> getDateList() {
+        return dateList;
     }
 }

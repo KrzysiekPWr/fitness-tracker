@@ -4,12 +4,15 @@ import controller.DataPersistanceManager;
 
 import javax.swing.*;
 
-public class MainFrame extends FrameViewer {
+public class MainFrame extends ComponentBuilder {
     private JPanel panel1;
     private JButton createWorkoutButton;
-    private JButton deleteWorkoutButton;
-    private JButton editWorkoutButton;
     private JButton excercisesButton;
+    private JButton startWorkoutButton;
+    private JButton browseWorkoutSessionsButton;
+    private JButton createGoalButton;
+    private JButton browseGoalsButton;
+    private JButton browseWorkoutsButton;
     JFrame frame = new JFrame();
     public MainFrame(){
         frame.setTitle("FitnessTracker");
@@ -32,6 +35,33 @@ public class MainFrame extends FrameViewer {
             frame.dispose();
         });
 
+        browseWorkoutsButton.addActionListener(e -> {
+            new BrowseWorkoutsFrame();
+            frame.dispose();
+        });
+
+        //if the user clicks the start workout button, open the startWorkout frame
+        startWorkoutButton.addActionListener(e -> {
+            ChooseWorkoutFrame startWorkoutFrame = new ChooseWorkoutFrame();
+            startWorkoutFrame.setVisible(true);
+            frame.dispose();
+        });
+
+        createGoalButton.addActionListener(e -> {
+            new CreateGoalFrame();
+            frame.dispose();
+        });
+
+        browseGoalsButton.addActionListener(e -> {
+            new BrowseGoalsFrame();
+            frame.dispose();
+        });
+
+        browseWorkoutSessionsButton.addActionListener(e -> {
+            new BrowseWorkoutSessionsFrame();
+            frame.dispose();
+        });
+
         frame.addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
@@ -39,7 +69,9 @@ public class MainFrame extends FrameViewer {
                     "Are you sure you want to close this window?", "Close Window?",
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION){
-                    DataPersistanceManager.saveData();
+                    DataPersistanceManager.saveExercisesData("exercises.ser");
+                    DataPersistanceManager.saveWorkoutsData("workouts.ser");
+                    DataPersistanceManager.saveGoalsData("goals.ser");
                     System.exit(0);
                 }
             }

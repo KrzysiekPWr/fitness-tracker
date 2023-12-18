@@ -7,7 +7,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="591b9" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="591b9" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -25,28 +25,14 @@
             <properties>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Create workout"/>
-              <verticalAlignment value="0"/>
-              <verticalTextPosition value="0"/>
-            </properties>
-          </component>
-          <component id="f71bb" class="javax.swing.JButton" binding="editWorkoutButton" default-binding="true">
-            <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="300" height="200"/>
-              </grid>
-            </constraints>
-            <properties>
-              <horizontalAlignment value="0"/>
-              <horizontalTextPosition value="0"/>
-              <text value="Edit workout"/>
+              <text value="Create Workout"/>
               <verticalAlignment value="0"/>
               <verticalTextPosition value="0"/>
             </properties>
           </component>
           <component id="daff7" class="javax.swing.JButton" binding="excercisesButton" default-binding="true">
             <constraints>
-              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="300" height="200"/>
               </grid>
             </constraints>
@@ -58,40 +44,79 @@
               <verticalTextPosition value="0"/>
             </properties>
           </component>
-          <component id="be762" class="javax.swing.JButton" binding="deleteWorkoutButton" default-binding="true">
+          <component id="f045d" class="javax.swing.JButton" binding="browseWorkoutsButton">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="300" height="200"/>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="300"/>
               </grid>
             </constraints>
             <properties>
-              <horizontalAlignment value="0"/>
-              <horizontalTextPosition value="0"/>
-              <text value="Delete workout"/>
-              <verticalAlignment value="0"/>
-              <verticalTextPosition value="0"/>
+              <text value="Browse Exercises"/>
             </properties>
           </component>
         </children>
       </grid>
-      <grid id="6bfeb" layout-manager="CardLayout" hgap="0" vgap="0">
+      <grid id="6bfeb" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties/>
         <border type="none" title="Goals"/>
-        <children/>
+        <children>
+          <component id="7b612" class="javax.swing.JButton" binding="createGoalButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="400" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Create Goal"/>
+            </properties>
+          </component>
+          <component id="6dfc7" class="javax.swing.JButton" binding="browseGoalsButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="400" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Browse Goals"/>
+            </properties>
+          </component>
+        </children>
       </grid>
-      <grid id="c2d5b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="c2d5b" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties/>
-        <border type="none" title="Something"/>
-        <children/>
+        <border type="none" title="Workout Sessions"/>
+        <children>
+          <component id="98afd" class="javax.swing.JButton" binding="browseWorkoutSessionsButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Browse Workout Sessions"/>
+            </properties>
+          </component>
+          <component id="2ac49" class="javax.swing.JButton" binding="startWorkoutButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Start Workout"/>
+            </properties>
+          </component>
+        </children>
       </grid>
     </children>
   </grid>
