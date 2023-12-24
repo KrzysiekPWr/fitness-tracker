@@ -17,7 +17,8 @@ public class Goal implements Serializable {
     private LocalDate creationDate;
     private Exercise relatedExercise;
     private int value;
-    private List<Integer> progressList = new ArrayList<>();
+    private List<String[]> progressList = new ArrayList<>();
+
     static private ArrayList<Goal> goalList = new ArrayList<>();
 
 
